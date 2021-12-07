@@ -5,9 +5,9 @@ namespace App;
 class ArrayUtils
 {
     /**
-     * @param array $array not empty
-     * @param array $target
-     * @return int
+     * @param integer[] $array not empty
+     * @param integer[] $target
+     * @return integer
      */
     static public function numSubarraysSumTarget($array, $target)
     {
@@ -30,8 +30,8 @@ class ArrayUtils
 
 
     /**
-     * @param array $array not empty
-     * @return array
+     * @param integer[] $array not empty
+     * @return integer[][]
      */
     static public function buildLeftSubarraysSumsHashTable($array)
     {
@@ -52,9 +52,9 @@ class ArrayUtils
 
 
     /**
-     * @param array $first  sorted in ascendent order
-     * @param array $second sorted in ascendent order
-     * @return int
+     * @param integer[] $first  sorted in ascendent order, strictly growing
+     * @param integer[] $second sorted in ascendent order, strictly growing
+     * @return integer
      */
     static public function numCouplesWhereFirstIsSmaller($first, $second)
     {

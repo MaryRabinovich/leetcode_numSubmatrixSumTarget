@@ -5,9 +5,9 @@ namespace App;
 class MatrixUtils
 {
     /**
-     * @param array $matrix not empty
-     * @param int $target
-     * @return int
+     * @param integer[][] $matrix not empty
+     * @param integer $target
+     * @return integer
      */
     static public function numInrowSubarraysSumTarget($matrix, $target)
     {
@@ -20,11 +20,9 @@ class MatrixUtils
     }
 
     /**
-     * @param array $first  not empty matrix
-     * @param array $second not empty matrix
-     * @return array        not empty matrix  
-     * 
-     * $first and $second must have same dimensions
+     * @param integer[][] $first  not empty
+     * @param integer[][] $second not empty, same dimensions as $first
+     * @return integer[][]        not empty  
      */
     static public function sumTwoMatrix(array $first, array $second)
     {

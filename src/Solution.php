@@ -5,9 +5,9 @@ namespace App;
 class Solution {
 
     /**
-     * @param array $matrix
-     * @param int $target
-     * @return int
+     * @param integer[][] $matrix
+     * @param integer $target
+     * @return integer
      */
     function numSubmatrixSumTarget($matrix, $target) {
 
